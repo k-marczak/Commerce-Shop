@@ -5,10 +5,9 @@
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Demo](#demo)
 
 ---
 
@@ -43,5 +42,5 @@ $ npm start
 
 ## Demo
 
-Here is a working live demo
+Here is a working live demo https://commerce-shop.netlify.app/
 
