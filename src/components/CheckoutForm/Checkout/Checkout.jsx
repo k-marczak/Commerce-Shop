@@ -47,7 +47,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
           <h2>Dziękujemy za zakupy. Życzymy miłego dnia :)</h2>
         </div>
         <br />
-        <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+        <Button component={Link} variant="outlined" type="button" to="/">Strona główna</Button>
       </>
     );
 
