@@ -1,24 +1,27 @@
 import { Container, Typography, Button, Grid } from "@material-ui/core";
-
+import image from '../../assets/image.svg'
 import './style.css'
 
 const Banner = () => {
   return (
     <div className="banner">
       <Container>
-        <Grid container spacing={4}>
+        <Grid container className="huj" spacing={4}>
           <Grid item xs={12} sm={6}>
             <Typography className="title" variant="h4">
-              Welcome to DwinaTech Shop
+              Witamy w naszym sklepie obuwniczym
             </Typography>
+            <h4 style={{marginLeft: '23px', color: 'grey'}}>Szeroki zakres asortymentu</h4>
             <Button className="shopping-button" href="#products">
-              Shopping
+              Produkty
             </Button>
           </Grid>
           <Grid className="brand" item sm={6}>
-            <img src="" alt="Brand-tv" />
+            <img src={image} style={{height: '300px', marginTop: '110px'}} alt="Brand-tv" />
           </Grid>
         </Grid>
+        
+        
       </Container>
     </div>
   );

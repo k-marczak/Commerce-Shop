@@ -3,6 +3,7 @@ import { commerce } from './lib/commerce';
 import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './index.css';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -111,7 +112,7 @@ const App = () => {
           
 
         </Switch>
-        
+        <Footer />
       </div>
     </Router>
     

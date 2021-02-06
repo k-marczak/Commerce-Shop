@@ -3,11 +3,20 @@ import { Grid } from '@material-ui/core';
 import Banner from '../Banner/Banner'
 import Product from './Product/Product';
 import useStyles from './styles';
+import Spinner from '../Spinner/Spinner';
 
 
 const Products = ({ products, onAddToCart }) => {
 
     const classes = useStyles();
+
+    if(!products.length) return(
+        <>
+            <Banner />
+            <Spinner />
+        </>
+        
+    );
 
     return(
        <>

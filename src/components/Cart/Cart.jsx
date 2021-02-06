@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
+import Footer from '../Footer/Footer';
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart  }) => {
 
@@ -16,6 +17,8 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
         <Typography variant="subtitle1">You have no items in your shopping cart, start adding some!
             <Link to="/" className={classes.link}>Start adding some</Link>!
         </Typography>
+        
+        
     );
 
     const FilledCart = () => (

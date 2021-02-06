@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #e2f3f5;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    color: black !important;
+  }
+  
+  .correct{
+    overflow: hidden !important;
+  }
+
+
+  p{
+    color: black !important;
+  }
