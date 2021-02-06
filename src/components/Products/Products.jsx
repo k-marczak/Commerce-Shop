@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-
+import Banner from '../Banner/Banner'
 import Product from './Product/Product';
 import useStyles from './styles';
 
@@ -10,7 +10,9 @@ const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
 
     return(
-        <main className={classes.content}>
+       <>
+       <Banner />
+        <main className={classes.content} id="products">
             <div className={classes.toolbar} />
             <Grid container justify="center" spacing={4}>
                 {products.map((product) => (
@@ -20,6 +22,7 @@ const Products = ({ products, onAddToCart }) => {
                 ))}
             </Grid>
         </main>
+        </>
     )
 }
 

@@ -7,6 +7,7 @@ export default makeStyles(() => ({
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
+    height: '100px',
   },
   cartActions: {
     justifyContent: 'space-between',

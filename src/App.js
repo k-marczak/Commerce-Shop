@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import './index.css';
 
 
 
@@ -55,7 +55,7 @@ const App = () => {
 
   const refreshCart = async () => {
     const newCart = await commerce.cart.refresh();
-    setCart(cart);
+    setCart(newCart);
   }
 
   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
@@ -103,6 +103,7 @@ const App = () => {
               order={order}
               onCaptureCheckout={handleCaptureCheckout}
               error={errorMessage}
+              handleEmptyCart={handleEmptyCart}
               
             />
           </Route>

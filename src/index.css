@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #c9d1d9;
+    background-color: white;
+}
