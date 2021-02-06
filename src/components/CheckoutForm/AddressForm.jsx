@@ -61,7 +61,7 @@ const AddressForm = ({ checkoutToken, next }) => {
 
     return (
         <>
-            <Typography variant="h6" gutterBottom>Shipping Address</Typography>
+            <Typography variant="h6" gutterBottom>Adres dostawy</Typography>
             <FormProvider {...methods}>
                 <form onSubmit={methods.handleSubmit((data) => next({ ...data, shippingCountry, shippingSubdivision, shippingOption }))}>
                 

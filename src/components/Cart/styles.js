@@ -4,6 +4,7 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   title: {
     marginTop: '5%',
+    marginBottom: '100px',
   },
   emptyButton: {
     minWidth: '150px',
@@ -19,6 +20,8 @@ export default makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
+    color: 'black',
+    
   },
   cardDetails: {
     display: 'flex',

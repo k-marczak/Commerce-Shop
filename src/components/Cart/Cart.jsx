@@ -2,10 +2,9 @@ import React from 'react'
 import { Container, Typography, Button, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-
+import './style.css'
 import useStyles from './styles';
 import CartItem from './CartItem/CartItem';
-import Footer from '../Footer/Footer';
 
 const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart  }) => {
 
@@ -14,10 +13,15 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     
 
     const EmptyCart = () => (
-        <Typography variant="subtitle1">You have no items in your shopping cart, start adding some!
-            <Link to="/" className={classes.link}>Start adding some</Link>!
+        <Typography style={{color: 'black'}}  variant="subtitle1">Twój koszyk jest pusty, dodaj do koszyka przedmioty naciskając 'Dodaj...'
+
+            <Button className="btn">
+               <Link to="/" className={classes.link}>Dodaj...</Link>
+            </Button>
+            
+            <div className="space"></div>
+           
         </Typography>
-        
         
     );
 
@@ -31,15 +35,15 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
                 ))}
             </Grid>
             <div className={classes.cardDetails}>
-                    <Typography variant="h4">
-                        Subtotal: { cart.subtotal.formatted_with_symbol }
+                    <Typography variant="h4" style={{color: 'black', marginTop: '0'}}>
+                        Suma: { cart.subtotal.formatted_with_symbol }
                     </Typography>
-                    <div>
-                        <Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>
-                            Empty Cart
+                    <div style={{marginBottom: '40px'}}> 
+                        <Button style={{backgroundColor: '#e41749'}} className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>
+                            Usuń wszystkie
                         </Button>
-                        <Button component={Link} to="/checkout" className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">
-                            Checkout
+                        <Button style={{backgroundColor: '#482ff7'}}  component={Link} to="/checkout" className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">
+                            Zapłać
                         </Button>
                     </div>
             </div>
@@ -53,7 +57,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     return (
         <Container>
             <div className={classes.toolbar} />
-            <Typography className={classes.title} variant="h3" gutterBottom >Your Shopping Cart</Typography>
+            <Typography className={classes.title} style={{color: 'black'}} variant="h3" gutterBottom >Twój Koszyk</Typography>
             { !cart.line_items.length ? <EmptyCart /> : <FilledCart/> }
         </Container>
     )

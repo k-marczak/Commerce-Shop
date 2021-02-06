@@ -9,7 +9,7 @@ import PaymentForm from '../PaymentForm';
 
 
 
-const steps = ['Shipping address', 'Payment details'];
+const steps = ['Adres dostawy', 'Płatności'];
 
 const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
 
@@ -44,7 +44,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     let Confirmation = () => (
       <>
         <div>
-          <h2>Thank you for your purchase</h2>
+          <h2>Dziękujemy za zakupy. Życzymy miłego dnia :)</h2>
         </div>
         <br />
         <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
@@ -65,7 +65,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
       <div className={classes.toolbar} />
       <main className={classes.layout}>
         <Paper className={classes.paper}>
-          <Typography variant="h4" align="center">Checkout</Typography>
+          <Typography variant="h4" align="center">Podsumowanie</Typography>
           <Stepper activeStep={activeStep} className={classes.stepper}>
             {steps.map((step) => (
               <Step key={step}>
