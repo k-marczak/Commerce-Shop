@@ -29,6 +29,7 @@
     font-family: "Roboto", sans-serif;
     margin-left: 20px;
     color: black;
+
   }
   
   .banner a.shopping-button {
@@ -52,4 +53,12 @@
     .banner .title {
       font-size: 65px;
     }
+  }
+
+    @media (max-width: 400px) {
+      .banner .title {
+        margin-top: 60px;
+      }
+
+
   }
