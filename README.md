@@ -2,44 +2,38 @@
 
 ---
 
-### Table of Contents
+## Description
 
-- [Description](#description)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Demo](#demo)
+
+E-commerce shop is a fully functional application that enables you manage selected products
 
 ---
 
-## Description
+## Technologies
 
-This is a web-app training project, fully functional eCommerce application using commerce.js.
-
-
-
-
-#### Technologies
-
-- React
+- React, react-router, react-hook-form
 - Commerce.js
 - Material UI
 - Stripe JS
 
-[Back To The Top](#e-shop-Commerce.js)
-
 ---
 
 ## Setup
-To run this project, install it locally using npm:
+
+To test this app on your own, you will need a commercial and stripe account.
+
+In .env folder include commerce and stripe keys.
+
+To run this project
 
 ```
 $ npm install
 $ npm start
 ```
 
-[Back To The Top](#e-shop-Commerce.js)
+---
 
 ## Demo
 
-Here is a working live demo https://commerce-shop.netlify.app/
+Live demo https://commerce-shop.netlify.app/
 
