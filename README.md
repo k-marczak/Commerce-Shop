@@ -2,19 +2,21 @@
 
 ---
 
-## Description
+# Description
 
 
 E-commerce shop is a fully functional application that enables you manage selected products
 
+---
 
-#### Technologies
+# Technologies
 
 - React, react-router, react-hook-form
 - Commerce.js
 - Material UI
 - Stripe JS
 
+---
 
 ## Setup
 
