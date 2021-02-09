@@ -31,6 +31,8 @@ $ npm install
 $ npm start
 ```
 
+---
+
 ## Demo
 
 Live demo https://commerce-shop.netlify.app/
