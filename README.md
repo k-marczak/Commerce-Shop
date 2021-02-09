@@ -33,7 +33,6 @@ This is a web-app training project, fully functional eCommerce application using
 To run this project, install it locally using npm:
 
 ```
-$ cd ../e-shop
 $ npm install
 $ npm start
 ```
