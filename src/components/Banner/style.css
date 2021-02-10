@@ -49,6 +49,8 @@
 
   }
 
+  
+
   @media (min-width: 800px) {
     .banner .title {
       font-size: 65px;
@@ -56,8 +58,9 @@
   }
 
     @media (max-width: 400px) {
-      .banner .title {
-        margin-top: 60px;
+      .header{
+        position: relative;
+        top: 63px;
       }
 
 

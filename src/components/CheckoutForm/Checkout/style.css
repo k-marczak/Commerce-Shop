@@ -1,0 +1,10 @@
+
+
+
+@media (max-width: 400px){
+    .paper{
+        position: relative;
+        right: 5px;
+        padding: 15px;
+    }
+}

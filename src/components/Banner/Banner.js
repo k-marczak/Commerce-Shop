@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="banner">
       <Container>
         <Grid container className="huj" spacing={4}>
-          <Grid item xs={12} sm={6}>
+          <Grid className="header" item xs={12} sm={6}>
             <Typography className="title" variant="h4">
               Witamy w naszym sklepie obuwniczym
             </Typography>
