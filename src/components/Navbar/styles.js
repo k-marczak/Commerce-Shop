@@ -14,7 +14,7 @@ export default makeStyles((theme) => ({
     },
   },
   title: {
-    marginTop: '17px',
+    marginTop: '9px',
     flexGrow: 1,
     alignItems: 'center',
     display: 'flex',

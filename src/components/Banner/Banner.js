@@ -1,8 +1,30 @@
+import {useRef, useEffect} from 'react'
 import { Container, Typography, Button, Grid } from "@material-ui/core";
 import image from '../../assets/image.svg'
 import './style.css'
+import {TweenMax, Power3} from 'gsap'
+
+
+
+
 
 const Banner = () => {
+
+  let header1 = useRef();
+
+  useEffect(() => {
+    TweenMax.to(
+      header1,
+      1.4,
+      {
+        opacity: 1,
+        y: 15,
+        ease: Power3.easeOut
+      }
+    )  
+  })
+
+  
   return (
     <div className="banner">
       <Container>
@@ -17,7 +39,7 @@ const Banner = () => {
             </Button>
           </Grid>
           <Grid className="brand" item sm={6}>
-            <img src={image} style={{height: '300px', marginTop: '110px'}} alt="Brand-tv" />
+            <img ref={el => {header1 = el}} src={image} style={{height: '300px', marginTop: '110px', opacity: '0'}} alt="Brand-tv" />
           </Grid>
         </Grid>
         
